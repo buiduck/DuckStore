@@ -9,6 +9,7 @@ import MyOrders from './pages/MyOrders';
 import Footer from './components/Footer';
 import { useState } from 'react';
 import LoginPopup from './components/LoginPopup';
+import Contact from './pages/Contact';
 export default function App() {
   const [showLogin, setShowLogin] = useState(false);
   return (
@@ -24,6 +25,7 @@ export default function App() {
         <Route path='/order' element={<Order/>}/>
         <Route path='/verify' element={<Verify/>}/>
         <Route path='/myorders' element={<MyOrders/>}/>
+        <Route path='/contact' element={<Contact/>}/>
       </Routes>
       <Footer/>
     </BrowserRouter>
